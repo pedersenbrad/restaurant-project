@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!--
+    Name: Your Name
+    Date Created: Today's date
+    Most recent revision:
+-->
+<html lang="en">
+    <head>
+        <title>Contact Us</title>
+    </head>
+
+    <body>
+        <header>
+            <h1 style="text-align:center">El Sabor de San Luis</h1>
+        </header>
+
+        <nav>
+          <hr />
+            <p><a href="index.html">Home</a> &nbsp;&nbsp;&nbsp;&nbsp; <a href="menu.html">Menu</a> &nbsp;&nbsp;&nbsp;&nbsp; <a href="contact.html">Contact Us</a></p>
+          <hr/>
+        </nav>
+
+        <br />
+
+
+        <form action="submit.html" method="POST">
+          <label for="name">Name: </label><input type="text" id="name" name="name"><br /><br />
+          <label for="email">Email: </label><input type="text" id="email" name="email"><br /><br />
+          <label for="phone">Phone: </label><input type="text" id="phone" name="phone"><br /><br />
+
+          <label for="inquiry">Reason for Inquiry: </label>
+          <select id="inquiry" name="inquiry">
+            <option value="catering" selected>Catering</option>
+            <option value="private-party">Private Party</option>
+            <option value="feedback">Feedback</option>
+            <option value="other">Other</option>
+          </select><br />
+
+          <label for="info">Additional Information: </label><textarea id="info" name="info"></textarea><br />
+
+          <label for="questionnaire">Have you been to the restaurant?</label>
+          <input type="radio" id="choice2" name="questionnaire" value="no" checked="checked"><label for="choice2">No</label>
+          <input type="radio" id="choice1" name="questionnaire" value="yes"><label for="choice1">Yes</label><br />
+
+          <label for="contact">Best days to contact you: </label>
+          <input type="checkbox" id="Monday" name="Monday" value="Monday">
+          <label for="frontEnd">M</label>
+          <input type="checkbox" id="Tuesday" name="Tuesday" value="Tuesday">
+          <label for="backEnd">T</label>
+          <input type="checkbox" id="Wednesday" name="Wednesday" value="Wednesday">
+          <label for="database">W</label>
+          <input type="checkbox" id="Thursday" name="Thursday" value="Thursday">
+          <label for="backEnd">Th</label>
+          <input type="checkbox" id="Friday" name="Friday" value="Friday">
+          <label for="database">F</label><br />
+
+          <input type="submit" name="submit" value="Send Request">
+        </form>
+        
+        <br />
+
+        <footer>
+          <hr />
+          <p style="text-align:center"> 7 Bluff Dr, Osceola, WI, 54020<br />Phone: 202-022-2002</p>
+        </footer>
+    </body>
+</html
