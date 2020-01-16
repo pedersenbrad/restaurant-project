@@ -1,0 +1,21 @@
+header, footer {
+  text-align: center;
+}
+
+header {
+  padding: 5px 0px 5px 0px;
+  font-family: 'IM Fell Great Primer SC', serif;
+  font-size: 1.2em;
+}
+
+footer {
+  margin-top: 75px;
+}
+
+body {
+  background-color: #ece5d5;
+}
+
+header, footer, nav {
+  background-color:  #ffffff;
+}

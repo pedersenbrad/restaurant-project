@@ -7,11 +7,43 @@
 <html lang="en">
     <head>
         <title>Menu</title>
+
+        <link href="styles/restaurantStyles.css" rel="stylesheet" type="text/css" />
+        <!--Font from google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=IM+Fell+Great+Primer+SC&display=swap" rel="stylesheet">
+
+        <style>
+          .food {
+            margin: auto;
+            width: 65%;
+            background-color: orange;
+          }
+
+          .food td {
+            text-align: center;
+          }
+
+          th {
+            padding-top: 30px;
+            font-size: 1.3em;
+          }
+
+          .beverages {
+            margin: auto;
+            width: 35%;
+            background-color: lightblue;
+          }
+
+          .beverages th, td {
+            text-align: left;
+          }
+
+        </style>
     </head>
 
     <body>
         <header>
-            <h1 style="text-align:center">El Sabor de San Luis</h1>
+            <h1>The Taste of San Luis</h1>
         </header>
 
         <nav>
@@ -20,28 +52,33 @@
           <hr/>
         </nav>
 
-        <table align="center" width="65%">
+        <table class="food">
           <tr>
             <th>Red Tacos</th><th>Enchiladas Potosinas</th><th>Gorditas</th>
           </tr>
           <tr>
-            <td style="text-align:center">Your choice of<br /> beef, chicken, or pork<br />$9.00</td><td style="text-align:center">Fried red tortillas with cheese<br />served with beans and avocados<br />$9.00</td><td style="text-align:center">A thick tortilla stuffed with your choice<br />chorizo, mole, or cheese<br />$9.00</td>
+            <td>Your choice of<br /> beef, chicken, or pork<br />$9.00</td><td>Fried red tortillas with cheese<br />served with beans and avocados<br />$9.00</td><td>A thick tortilla stuffed with your choice<br />chorizo, mole, or cheese<br />$9.00</td>
           </tr>
           <tr>
             <th>Sopes</th><th>Torta</th><th>Tacos</th>
           </tr>
           <tr>
-            <td style="text-align:center">A thick tortilla topped with<br />beans, lettuce, avocado, and sour cream<br />$9.00</td><td style="text-align:center">Mexican style sandwich made with<br />steak, pork, or chicken<br />$9.00</td><td style="text-align:center">Traditional tacos with your choice of<br />steak, chorizo, or pork<br />$9.00</td>
+            <td>A thick tortilla topped with<br />beans, lettuce, avocado, and sour cream<br />$9.00</td><td>Mexican style sandwich made with<br />steak, pork, or chicken<br />$9.00</td><td>Traditional tacos with your choice of<br />steak, chorizo, or pork<br />$9.00</td>
           </tr>
         </table>
 
-        <br />
-        <br />
-        <br />
+        <table class="beverages">
+          <tr><th colspan="2">Beverages</th></tr>
+          <tr><td>Root Beer</td><td>$3.00</td></tr>
+          <tr><td>Bottled Water</td><td>$1.25</td></tr>
+          <tr><td>Lemonade</td><td>$1.00</td></tr>
+          <tr><td>Iced Tea</td><td>$1.25</td></tr>
+        </table>
 
         <footer>
           <hr />
-          <p style="text-align:center"> 7 Bluff Dr, Osceola, WI, 54020<br />Phone: 202-022-2002</p>
+          <p> 7 Bluff Dr, Osceola, WI, 54020<br />Phone: 202-022-2002</p>
+          <hr />
         </footer>
     </body>
 </html
