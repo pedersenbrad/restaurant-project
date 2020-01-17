@@ -19,3 +19,25 @@ body {
 header, footer, nav {
   background-color:  #ffffff;
 }
+
+nav a:hover {
+  font-weight: bold;
+}
+
+nav a:visited {
+  color: red;
+}
+
+nav a:active {
+  text-decoration: none;
+}
+
+nav a {
+  padding: 20px;
+  display: block;
+  float: left;
+}
+
+.clear-float {
+    clear:both;
+}
