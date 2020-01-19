@@ -16,7 +16,11 @@ body {
   background-color: #ece5d5;
 }
 
-header, footer, nav {
+footer, nav {
+  background-color:  #ffffff;
+}
+
+.jumbotron {
   background-color:  #ffffff;
 }
 
@@ -36,6 +40,12 @@ nav a {
   padding: 20px;
   display: block;
   float: left;
+}
+
+nav .btn {
+  background-color: #dfd4b9;
+  color: #000;
+  margin: 0px 5px 0px 5px;
 }
 
 .clear-float {
