@@ -9,7 +9,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <title>Menu</title>
-
+        <!--Font for Home icon-->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <!--Font from google fonts-->
         <link href="https://fonts.googleapis.com/css?family=IM+Fell+Great+Primer+SC&display=swap" rel="stylesheet">
@@ -17,22 +17,17 @@
         <link href="styles/restaurantStyles.css" rel="stylesheet" type="text/css" />
 
         <style>
-          .food {
-            margin: auto;
-            margin-bottom: 50px;
-            margin-top: 50px;
-            width: 65%;
+          .table {
             background-color:  #f8f6f1;
           }
 
-          .food td {
+          .col-md-4, .foodHead {
             text-align: center;
-            vertical-align: top;
           }
 
-          th {
+          .foodHead {
             font-size: 1.3em;
-            text-align: center;
+            font-weight: bold;
           }
 
           .beverages {
@@ -44,42 +39,44 @@
           .beverages th, td {
             text-align: left;
           }
-
-          .secondrow {
-            height: 50px;
-            vertical-align: bottom;
-          }
         </style>
     </head>
 
     <body>
+      <div class="container">
         <header class="jumbotron">
             <h1>The Taste of San Luis</h1>
-            <h3 class="text-right mt-5">New Location in Stillwater, MN!</h3>
+            <h4 class="text-right mt-5">New Location in Stillwater, MN!</h4>
         </header>
 
         <nav>
-          <hr />
             <a class="btn badge-pill" href="index.html"><i class="fa fa-home"></i></a><a class="btn badge-pill" href="menu.html">Menu</a><a class="btn badge-pill" href="contact.html">Contact Us</a>
             <div class="clear-float"></div>
-          <hr/>
         </nav>
 
-        <table class="food">
-          <tr>
-            <th>Red Tacos</th><th>Enchiladas Potosinas</th><th>Gorditas</th>
-          </tr>
-          <tr>
-            <td>Your choice of<br /> beef, chicken, or pork<br />$9.00</td><td>Fried red tortillas with cheese<br />served with beans and avocados<br />$9.00</td><td>A thick tortilla stuffed with your choice<br />chorizo, mole, or cheese<br />$9.00</td>
-          </tr>
-          <tr class="secondrow">
-            <th>Sopes</th><th>Torta</th><th>Tacos</th>
-          </tr>
-          <tr>
-            <td>A thick tortilla topped with<br />beans, lettuce, avocado, and sour cream<br />$9.00</td><td>Mexican style sandwich made with<br />steak, pork, or chicken<br />$9.00</td><td>Traditional tacos with your choice of<br />steak, chorizo, or pork<br />$9.00</td>
-          </tr>
-        </table>
+        <div class="table">
+          <div class="row">
+              <div class="col-md-4"><span class="foodHead">Red Tacos<br /></span>
+              Your choice of<br /> beef, chicken, or pork<br />$9.00</div>
 
+              <div class="col-md-4"><span class="foodHead">Enchiladas Potosinas<br /></span>
+              Fried red tortillas with cheese<br />served with beans and avocados<br />$9.00</div>
+
+              <div class="col-md-4"><span class="foodHead">Gorditas<br /></span>
+              A thick tortilla stuffed with your choice<br />chorizo, mole, or cheese<br />$9.00</div>
+          </div>
+          <br />
+          <div class="row">
+              <div class="col-md-4"><span class="foodHead">Sopes<br /></span>
+              A thick tortilla topped with<br />beans, lettuce, avocado, and sour cream<br />$9.00</div>
+
+              <div class="col-md-4"><span class="foodHead">Torta<br /></span>
+              Mexican style sandwich made with<br />steak, pork, or chicken<br />$9.00</div>
+
+              <div class="col-md-4"><span class="foodHead">Tacos<br /></span>
+              Traditional tacos with your choice of<br />steak, chorizo, or pork<br />$9.00</div>
+          </div>
+        </div>
         <table class="beverages">
           <tr><th colspan="2">Beverages</th></tr>
           <tr><td>Root Beer</td><td>$3.00</td></tr>
@@ -89,10 +86,11 @@
         </table>
 
         <footer>
-          <hr />
-          <p> 7 Bluff Dr, Osceola, WI, 54020<br />Phone: 202-022-2002</p>
-          <hr />
+          <span> 7 Bluff Dr, Osceola, WI, 54020<br />Phone: 202-022-2002</span>
         </footer>
+
+        <center><span style="font-size: .8em;">~This site is best viewed with JavaScript enabled~</span></center>
+      </div>
 
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>

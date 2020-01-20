@@ -9,7 +9,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <title>Contact Us</title>
-
+        <!--Font for Home icon-->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <!--Font from google fonts-->
         <link href="https://fonts.googleapis.com/css?family=IM+Fell+Great+Primer+SC&display=swap" rel="stylesheet">
@@ -37,28 +37,28 @@
     </head>
 
     <body>
+      <div class="container">
         <header class="jumbotron">
             <h1>The Taste of San Luis</h1>
-            <h3 class="text-right mt-5">New Location in Stillwater, MN!</h3>
+            <h4 class="text-right mt-5">New Location in Stillwater, MN!</h4>
         </header>
 
         <nav>
-          <hr />
             <a class="btn badge-pill" href="index.html"><i class="fa fa-home"></i></a><a class="btn badge-pill" href="menu.html">Menu</a><a class="btn badge-pill" href="contact.html">Contact Us</a>
             <div class="clear-float"></div>
-          <hr/>
         </nav>
 
         <br />
 
-        <form action="submit.html" method="POST">
+        <form name="userInputs" onSubmit="return validate()">
           <table>
-          <tr><td class="label"><label for="name" class="required">Name: </label></td><td><input type="text" id="name" name="name" size="26" required></td></tr>
-          <tr><td class="label"><label for="email" class="required">Email: </label></td><td><input type="text" id="email" name="email" size="26" required></td></tr>
-          <tr><td class="label"><label for="phone" class="required">Phone: </label></td><td><input type="text" id="phone" name="phone" size="26" required></td></tr>
+<!-- Only made the inputs for Name, Email, and Phone required as it was not specified which fields need to be required-->
+          <tr><td class="label"><label for="name" class="required">Name: </label></td><td><input type="text" id="name" name="name"></td></tr>
+          <tr><td class="label"><label for="email" class="required">Email: </label></td><td><input type="text" id="email" name="email" placeholder="name@example.com"></td></tr>
+          <tr><td class="label"><label for="phone" class="required">Phone: </label></td><td><input type="text" id="phone" name="phone"></td></tr>
 
-          <tr><td class="label"><label for="inquiry" class="required">Reason for Inquiry: </label></td>
-          <td><select id="inquiry" name="inquiry" required>
+          <tr><td class="label"><label for="inquiry">Reason for Inquiry: </label></td>
+          <td><select id="inquiry" name="inquiry">
             <option value="catering" style="padding-right: 113px" selected>Catering</option>
             <option value="private-party">Private Party</option>
             <option value="feedback">Feedback</option>
@@ -66,7 +66,7 @@
           </select></td></tr>
 
           <tr><td class="label" style="vertical-align:top"><label for="info">Additional Information: </label></td>
-          <td><textarea id="info" name="info" cols="20"></textarea></td></tr>
+          <td><textarea id="info" name="info" cols="28"></textarea></td></tr>
 
           <tr><td class="label"><label for="questionnaire">Have you been to the restaurant? </label></td>
           <td><input type="radio" id="choice2" name="questionnaire" value="no" checked="checked"><label for="choice2">No</label>
@@ -85,15 +85,16 @@
           <label for="database">F</label></td></tr>
         </table>
         <br />
-          <input type="submit" name="submit" value="Send Request" id="submitbutton">
+          <input id="submitbutton" type="submit" name="submit" value="Send Request">
         </form>
 
         <footer>
-          <hr />
-          <p> 7 Bluff Dr, Osceola, WI, 54020<br />Phone: 202-022-2002</p>
-          <hr />
+          <span> 7 Bluff Dr, Osceola, WI, 54020<br />Phone: 202-022-2002</span>
         </footer>
 
+        <center><span style="font-size: .8em;">~This site is best viewed with JavaScript enabled~</span></center>
+      </div>
+        <script type="text/JavaScript" src="scripts/contact.js"></script>
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>

@@ -8,8 +8,8 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <title>El Sabor de San Luis</title>
-
+        <title>The Taste of San Luis</title>
+        <!--Font for Home icon-->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <!--Font from google fonts-->
         <link href="https://fonts.googleapis.com/css?family=IM+Fell+Great+Primer+SC&display=swap" rel="stylesheet">
@@ -18,37 +18,48 @@
     </head>
 
     <body>
+      <div class="container">
         <header class="jumbotron">
             <h1>The Taste of San Luis</h1>
-            <h3 class="text-right mt-5">New Location in Stillwater, MN!</h3>
+            <h4 class="text-right mt-5">New Location in Stillwater, MN!</h4>
         </header>
 
         <nav>
-            <hr />
               <a class="btn badge-pill" href="index.html"><i class="fa fa-home"></i></a><a class="btn badge-pill" href="menu.html">Menu</a><a class="btn badge-pill" href="contact.html">Contact Us</a>
               <div class="clear-float"></div>
-            <hr/>
         </nav>
 
-        <div style="text-align: center;">
-          <img src="images/food.jpg" alt="food" />
+        <div style="text-align:center;">
+          <img src="images/food.jpg" alt="food" class="img-fluid" />
         </div>
 
-        <center>
-          <p style="max-width:400px;">
-            El Sabor de San Luis is a small family owned restaurant located in the wonderful town of Osceola Wisconsin.
-            we bring you all your favorite flavors from the wonderful Mexican state of San Luis Potosi. All of our food is cooked with traditional
-            methods and homemade warm tortillas and flavorful sauces. Come vist us and have a wonderful meal with your friends and family,
-            and check out our rooftop seating with views of the wonderful St. Croix River valley.
-          </p>
-        </center>
+        <p style="max-width:400px; text-align:center; margin:auto; padding-top:20px;">
+          The Taste of San Luis is a small family owned restaurant located in the wonderful town of Osceola Wisconsin.
+          we bring you all your favorite flavors from the wonderful Mexican state of San Luis Potosi. All of our food is cooked with traditional
+          methods and homemade warm tortillas and flavorful sauces. Come vist us and have a wonderful meal with your friends and family,
+          and check out our rooftop seating with views of the wonderful St. Croix River valley.
+        </p>
+
+        <div id="carousel" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <span class="carouselItem">Check out our new location in Stillwater Minnesota!</span>
+            </div>
+            <div class="carousel-item">
+              <span class="carouselItem">We're rolling out our seasonal menu, with special options for this season!</span>
+            </div>
+            <div class="carousel-item">
+              <span class="carouselItem">The Drink of the Month is SG Special Brew!</span>
+            </div>
+          </div>
+        </div>
 
         <footer>
-            <hr />
-            <p> 7 Bluff Dr, Osceola, WI, 54020<br />Phone: 202-022-2002</p>
-            <hr />
+            <span> 7 Bluff Dr, Osceola, WI, 54020<br />Phone: 202-022-2002</span>
         </footer>
 
+        <center><span style="font-size: .8em;">~This site is best viewed with JavaScript enabled~</span></center>
+      </div>
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
